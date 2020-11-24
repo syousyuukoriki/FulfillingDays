@@ -6,10 +6,23 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    
   </head>
 
   <body>
     <%= yield %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+    <script src="swiper.js"></script>
+<script>
+      var swiper = new Swiper('.swiper-container', {
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  }
+});
+</script>
   </body>
 </html>

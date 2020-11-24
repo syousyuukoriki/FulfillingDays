@@ -1,0 +1,52 @@
+
+
+.header-title{
+  background-color: brown;
+  color: white;
+  padding: 30px;
+}
+
+.foot{
+  background-color: brown;
+  padding: 80px;
+}
+
+
+
+.btn-diary{
+  text-decoration: none;
+  color: white;
+  top: 60%;
+  left: 45%;
+  position: absolute;
+  background-color: gold;
+  padding: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 40px;
+}
+
+.swiper-container{
+  width: 100%;
+  height: calc(100vh - 110px);
+}
+
+.content-1{
+  background-image:url('https://images.pexels.com/photos/3932733/pexels-photo-3932733.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  position: relative;
+}
+
+.content-2{
+  background-image: url('https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+}
+
+.concept{
+  font-size: 60px;
+  color: aliceblue;
+  position: absolute;
+  font-weight: bold;
+  left: 35%;
+  top: 30%;
+}
