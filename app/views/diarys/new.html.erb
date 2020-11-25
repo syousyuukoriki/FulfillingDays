@@ -1,6 +1,6 @@
 <div class='looking-back'>
   <div class='form'>
-    <%= form_with model: @diary, local: true , url:'#'  do |f| %>
+    <%= form_with model: @diary, url: diarys_path, local: true  do |f| %>
       
       <div class="click-up-lord">
         <p>今日の1枚</p>
@@ -36,7 +36,7 @@
                 size     : 36,
                 starOff:  '<%= asset_path('star-off.png') %>',
                 starOn : '<%= asset_path('star-on.png') %>',
-                scoreName: 'comment[rate]',
+                scoreName: 'diary[rate]',
             });
         </script>
 
@@ -46,6 +46,7 @@
       </div>
 
         <%= f.submit "日記を書く", class:'rite-btn'%>
+        <%= link_to "トップに戻る", root_path, class: 'btn btn-top' %>
     <% end %>
   </div>
 <div>

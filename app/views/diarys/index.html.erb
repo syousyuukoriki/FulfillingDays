@@ -3,17 +3,54 @@
     <h1>FulfillingDays</h1>
   </div>
 </header>
-  <div class="swiper-container">
-   <div class="swiper-wrapper">
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
      <div class="swiper-slide content-1">
        <div class="concept">日々を記録していこう!</div>
        <%= link_to "日記を書く", new_diary_path, class: 'btn btn-diary' %>
      </div>
-     <div class="swiper-slide content-2">yahoo</div>
-   </div>
+      <div class="swiper-slide content-2">
+            <% if @diarys.present? %>
+              <% @diarys.each do |diary|%>
+              <div class="all-diarys">
+                <div class="one-page">
+                <div class="diarys day">
+                  <%= diary.day %>
+                </div>
+                <div class="diarys title">
+                  <%= diary.title%>
+                </div>
+                <div class="diarys rate">
+                  <div id="star-rate<%= diary.id%>"></div>    
+                    <script>
+                      $('#star-rate<%= diary.id%>').raty({
+                        size      : 36,
+                        starOff   : '<%= asset_path('star-off.png') %>',
+                        starOn    : '<%= asset_path('star-on.png') %>',
+                        half      : false,
+                        readOnly: true,
+                        score: <%= diary.rate %>,
+                      });
+                    </script>
+                </div>
+                <div class="diary image">
+                  <%= image_tag diary.image, size: "600x350" %>
+                </div>
+                <div class="diarys event">
+                  <%= diary.event %>
+                </div>
+                </div>
+              </div>
+              <% end %>
+            <% end %>
+         
+      </div>
+  </div>
    <div class="swiper-button-prev"></div>
    <div class="swiper-button-next"></div>
 </div>
+
   <footer>
     <div class="foot">
   </footer>

@@ -11,7 +11,7 @@
 }
 
 .form{
-  height: 840px;
+  height: 870px;
   width: 600px;
   font-size: 30px;
   font-weight: bold;
@@ -73,4 +73,16 @@ margin-bottom: 5px;
 
 .event-text{
   margin-top: 30px;
+}
+
+.btn-top{
+  height: 25px;
+  border-radius: 10px;
+  color: azure;
+  background: blue;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+  border: 1px solid orange;
+  text-decoration: none;
 }
