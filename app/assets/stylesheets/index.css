@@ -40,6 +40,10 @@
 .content-2{
   background-image: url('https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-size: cover;
+  height: 100%;
+  display: block;
+  justify-content: center;
+  overflow: scroll;
 }
 
 .concept{
@@ -49,4 +53,24 @@
   font-weight: bold;
   left: 35%;
   top: 30%;
+}
+
+.all-diarys{
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  border-radius:40px ;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.one-page{
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
 }
