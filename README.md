@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* アプリケーション名
+   FulfillingDays
 
-Things you may want to cover:
+* アプリケーション概要
+   日記を書くアプリです
 
-* Ruby version
+* 利用方法
+   トップページの「日記を書く」ボタンをクリックすると
+   フォームへ遷移するので、写真、タイトル、日付、充実度
+   を入力し「日記を書く」ボタンをクリックするとトップペ
+   ージに遷移するので、そこから右にある矢印をクリックす
+   るとスライドしてページが変わり投稿した日記がみれます。
 
-* System dependencies
+ * このアプリの目的
+    個人で自分だけの思い出を残したり、普段の生活を見直し
+    たり振り返ったりしたい方を対象に作りました。
 
-* Configuration
+ * 実装した機能
+    日記投稿機能
 
-* Database creation
+ * 実装予定の機能
+    * 日記編集機能
+    * 日記削除機能
+    * 絞り込み検索機能
+  
+ * データベース設計
+   ## diary テーブル
 
-* Database initialization
+| column                | Type         | Options                       |
+| --------------------- | ------------ | ----------------------------- |
+| title                 | string       | null: false                   |
+| event                 | text         | null: false                   |
+| day                   | date         | null: false                   |
+| rate                  | integer      | null: false                   |
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
